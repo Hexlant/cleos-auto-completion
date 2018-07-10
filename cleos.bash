@@ -66,8 +66,6 @@ _cleos ()
 	return 0
 } 
 
-#complete -F _cleos $CLEOS_TARGET_NAME
-
 for (( j=0 ; j < ${#CLEOS_TARGET_NAME[@]} ; j++ )); do
 	complete -F _cleos ${CLEOS_TARGET_NAME[$j]}
 done
