@@ -20,7 +20,7 @@ $ source /etc/bash_completion.d/cleos.bash
 
 ## Customization
 ### for custom cleos shell files
-If you're using your own cloes shell file, add your file name at $CLEOS_TARGET_NAME. You can find this at line 10.
+If you're using your own cloes shell file, add your file names at $CLEOS_TARGET_NAME before installation step. You can find this at line 10.
 ```bash
 (BEFORE)
 CLEOS_TARGET_NAME=(cleos)
