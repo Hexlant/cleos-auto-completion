@@ -8,12 +8,14 @@ For now, We only support BASH. But others will be supported soon.
 
 
 ## Installation
-Just clone this repo and copy script file to bash completion directory. To make it work with source command or restart your bash shell.
+Just clone this repo and append source command line inside of your environment file. To make it work immediately, execute source command or restart your bash shell.
 ```bash
 $ git clone https://github.com/Hexlant/cleos-auto-completion.git
 $ cd cleos-auto-completion
-$ sudo cp cleos.bash /etc/bash_completions.d/
-$ source /etc/bash_completion.d/cleos.bash
+$ echo "source $(pwd)/cleos.bash" >> ~/.bashrc
+
+(for immediate working..)
+$ source $(pwd)/cleos.bash
 ```
 <br/><br/>
 
