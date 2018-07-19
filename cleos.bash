@@ -32,15 +32,15 @@ _cleos ()
 	local c3_system_voteproducer=(proxy prods approve unapprove)
 
 	COMPREPLY=()
-	cur=${COMP_WORDS[COMP_CWORD]}
-	prev=${COMP_WORDS[COMP_CWORD-1]}
-	prev2=${COMP_WORDS[COMP_CWORD-2]}
+	cur=${COMP_WORDS[ $COMP_CWORD ]}
 
 
 	if [ $COMP_CWORD -eq 1 ]; then
 		COMPREPLY=( $(compgen -W "${c1[*]}" -- $cur) )
 
 	elif [ $COMP_CWORD -eq 2 ]; then
+        prev=${COMP_WORDS[ $COMP_CWORD - 1 ]}
+
 		local i=0
 
 		for (( i=0 ; i < ${#c1[@]} ; i++ )); do
@@ -52,6 +52,9 @@ _cleos ()
 			fi
 		done
 	elif [ $COMP_CWORD -eq 3 ]; then
+        prev=${COMP_WORDS[ $COMP_CWORD - 1 ]}
+        prev2=${COMP_WORDS[ $COMP_CWORD - 2 ]}
+
 		local i=0
 		eval current_c2=( '"${c2_'${prev2}'[@]}"' )
 		for (( i=0 ; i < ${#current_c2[@]} ; i++ )); do
