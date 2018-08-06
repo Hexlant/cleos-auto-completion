@@ -7,7 +7,7 @@
 ##
 ## EX) CLEOS_TARGET_NAME=( cleos cleos_mainnet.sh cleos_testnet.sh )
 #########################################################################
-CLEOS_TARGET_NAME=(cleos)
+CLEOS_TARGET_NAME=(cleos ./cleos.sh)
 
 
 
