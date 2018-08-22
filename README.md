@@ -30,7 +30,7 @@ If you're using your own cloes shell file, add your file names at $CLEOS_TARGET_
 CLEOS_TARGET_NAME=(cleos)
 
 (AFTER)
-CLEOS_TARGET_NAME=(cleos_local.sh cleos_mainnet.sh)
+CLEOS_TARGET_NAME=(./cleos_local.sh ./cleos_mainnet.sh)
 ```
 <br/><br/>
 
