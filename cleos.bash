@@ -15,7 +15,7 @@ _cleos ()
 {
 	local cur prev
 
-	local c1=(version create convert get set transfer net wallet sign push multisig sudo system)
+	local c1=(version create convert get set transfer net wallet sign push multisig wrap system)
 	local c2_version=(client)
 	local c2_create=(key account)
 	local c2_convert=(pack_transaction unpack_transaction pack_action_data unpack_action_data)
@@ -25,7 +25,7 @@ _cleos ()
 	local c2_wallet=(create open lock lock_all unlock import remove_key create_key list keys private_keys stop)
 	local c2_push=(action transaction transactions)
 	local c2_multisig=(propose propose_trx review approve unapprove cancel exec)
-    local c2_sudo=(exec)
+    local c2_wrap=(exec)
 	local c2_system=(newaccount regproducer unregprod voteproducer listproducers delegatebw undelegatebw listbw bidname bidnameinfo buyram sellram claimrewards regproxy unregproxy canceldelay)
 	local c3_get_currency=(balance stats)
 	local c3_set_account=(permission)
