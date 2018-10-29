@@ -68,4 +68,4 @@ CLEOS_TARGET_NAME=(./cleos_local.sh ./cleos_mainnet.sh)
 
 
 ## Contribution
-We always welcome contributions. Feel free to make pull request or report issues!
+We always welcome contributions. Feel free to make pull request or report issues! :) 
