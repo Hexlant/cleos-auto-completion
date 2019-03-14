@@ -26,11 +26,12 @@ _cleos ()
 	local c2_push=(action transaction transactions)
 	local c2_multisig=(propose propose_trx review approve unapprove invalidate cancel exec)
     local c2_wrap=(exec)
-	local c2_system=(newaccount regproducer unregprod voteproducer listproducers delegatebw undelegatebw listbw bidname bidnameinfo buyram sellram claimrewards regproxy unregproxy canceldelay)
+	local c2_system=(newaccount regproducer unregprod voteproducer listproducers delegatebw undelegatebw listbw bidname bidnameinfo buyram sellram claimrewards regproxy unregproxy canceldelay rex)
 	local c3_get_currency=(balance stats)
 	local c3_set_account=(permission)
 	local c3_set_action=(permission)
 	local c3_system_voteproducer=(proxy prods approve unapprove)
+	local c3_system_rex=(deposit withdraw buyrex lendrex unstaketorex sellrex cancelrexorder mvtosavings mvfromsavings rentcpu rentnet fundcpuloan fundnetloan defundcpuloan defundnetloan consolidate updaterex rexexec closerex)
 
 	COMPREPLY=()
 	cur=${COMP_WORDS[ $COMP_CWORD ]}
