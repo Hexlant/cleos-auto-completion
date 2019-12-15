@@ -2,6 +2,7 @@
 
 <img src="usage.gif"><br/><br/>
 
+* UPDATED TO EOSIO v1.8.6
 * UPDATED TO EOSIO v1.7.0 (REX support)
 
 Because of the limit of CLI11(commandline parser for c++) used by cleos, currently cleos do not provide command auto-complete functionality.
